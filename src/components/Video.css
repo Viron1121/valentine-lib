@@ -1,0 +1,15 @@
+.video-container {
+  width: 100vw;
+  height: 100vh;
+  background: #ffe9f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valentine-video {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+}

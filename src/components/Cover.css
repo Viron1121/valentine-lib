@@ -1,0 +1,70 @@
+.cover-container {
+  height: 100vh;
+  background: linear-gradient(180deg, #fff6f9, #ffeef3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valentine-card {
+  background: #ffe9f1;
+  padding: 32px 48px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 20px 40px rgba(100, 24, 62, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: #e964a6 1px solid;
+}
+
+.valentine-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 30px 60px rgba(255, 105, 180, 0.35);
+}
+
+.heart {
+  font-size: 40px;
+  margin-bottom: 12px;
+  animation: pulse 1.5s infinite;
+}
+
+h2 {
+  font-family: "cursive";
+  color: #d63384;
+  margin: 8px 0;
+}
+
+.envelope {
+  font-size: 28px;
+}
+
+.sparkles {
+  margin-top: 10px;
+  color: #ff69b4;
+  font-size: 14px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+
+.video-closing {
+  animation: videoToCard 0.9s ease forwards;
+}
+
+@keyframes videoToCard {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.6) rotateX(40deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotateX(0deg);
+  }
+}
