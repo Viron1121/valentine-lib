@@ -11,13 +11,13 @@ function Video({ onEnd }) {
       video.play().catch(() => {});
     }
   }, []);
-  
+
   return (
     
     <div className="video-container">
       <video
         className="valentine-video"
-        src="/Valentine.mp4"
+        src="/valentine.mp4"
         autoPlay
         playsInline
         controls={false}
