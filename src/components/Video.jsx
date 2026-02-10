@@ -11,18 +11,18 @@ function Video({ onEnd }) {
       video.play().catch(() => {});
     }
   }, []);
-
+  
   return (
     
     <div className="video-container">
       <video
         className="valentine-video"
-        src="/valentine.mp4"
+        src="/valentine-lib/valentine.mp4"
         autoPlay
         playsInline
         controls={false}
         onContextMenu={(e) => e.preventDefault()}
-        onPause={(e) => e.target.play()} // extra evil 😈
+        onPause={(e) => e.target.play()}
         onEnded={onEnd}
       />
     </div>
